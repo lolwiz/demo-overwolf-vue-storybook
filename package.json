@@ -1,6 +1,6 @@
 {
   "name": "demo-overwolf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
@@ -9,7 +9,8 @@
     "build:storybook": "vue-cli-service build:storybook -c config/storybook && node ./build-scripts/fix-static-storybook.js",
     "dev": "vue-cli-service build --mode=development && npm run serve",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "vue-devtools": "./node_modules/.bin/vue-devtools"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -27,6 +28,7 @@
     "@vue/cli-plugin-typescript": "^3.1.1",
     "@vue/cli-plugin-unit-jest": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
+    "@vue/devtools": "~4.1.5",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-loader": "~8.0.4",
     "fs-extra": "~7.0.1",
@@ -36,6 +38,7 @@
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
     "vue-cli-plugin-storybook": "~0.4.8",
+    "vue-inject": "~2.1.1",
     "vue-template-compiler": "^2.5.17"
   }
 }
